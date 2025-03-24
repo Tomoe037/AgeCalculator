@@ -4,7 +4,7 @@ import '../styles/Header.css';
 const Header = () => {
   return (
     <header className="app-header">
-      <h1>Age Calculation Application</h1>
+      <h1>Chuyển Đổi Độ C sang Độ FF</h1>
     </header>
   );
 };

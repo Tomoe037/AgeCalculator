@@ -1,0 +1,126 @@
+.converter-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.convert-btn, .share-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.convert-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.convert-btn:hover {
+  background-color: #0069d9;
+}
+
+.share-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.share-btn:hover {
+  background-color: #5a6268;
+}
+
+.convert-btn:disabled, .share-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.convert-btn:active, .share-btn:active {
+  transform: scale(0.98);
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+
+.result-container {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.temperature-result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.permission-note {
+  margin-top: 16px;
+  font-size: 0.875rem;
+  color: #dc3545;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .converter-container {
+      padding: 16px;
+  }
+
+  .button-group {
+      flex-direction: column;
+  }
+
+  .convert-btn, .share-btn {
+      width: 100%;
+  }
+}
