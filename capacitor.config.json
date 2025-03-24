@@ -1,0 +1,16 @@
+{
+  "appId": "com.agecaculate.example",
+  "appName": "agecaculate",
+  "webDir": "dist",
+  "server": {
+    "hostname": "localhost",
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon",
+      "iconColor": "#007bff",
+      "sound": "beep.wav"
+    }
+  }
+}

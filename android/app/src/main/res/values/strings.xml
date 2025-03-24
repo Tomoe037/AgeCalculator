@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">agecaculate</string>
+    <string name="title_activity_main">agecaculate</string>
+    <string name="package_name">com.agecaculate.example</string>
+    <string name="custom_url_scheme">com.agecaculate.example</string>
+</resources>
